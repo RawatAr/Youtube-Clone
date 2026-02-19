@@ -1,16 +1,37 @@
-# React + Vite
+# YouTube Clone
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A React-based YouTube clone application built with Vite, Redux, and Tailwind CSS.
 
-Currently, two official plugins are available:
+## Setup Instructions
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+1. Install dependencies:
+```bash
+npm install
+```
 
-## React Compiler
+2. Set up YouTube API key:
+   - Create a `.env` file in the root directory
+   - Add your YouTube API key: `VITE_YOUTUBE_API_KEY=your_api_key_here`
+   - Get your API key from [Google Cloud Console](https://console.cloud.google.com/)
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+3. Run the development server:
+```bash
+npm run dev
+```
 
-## Expanding the ESLint configuration
+## Features
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- Video browsing with infinite scroll
+- Search functionality
+- Video watching interface
+- History tracking
+- Responsive design
+
+## Technologies Used
+
+- React 19
+- Vite
+- Redux Toolkit
+- React Router
+- Tailwind CSS
+- YouTube Data API v3
