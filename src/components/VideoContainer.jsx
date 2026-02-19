@@ -76,14 +76,12 @@ const VideoContainer = () => {
     if (videos.length === 0 && !loading) return <Shimmer />;
 
     return (
-        <div className="p-4">
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4">
-                {videos.map((video, index) => (
-                    <Link key={video.id + index} to={"/watch/" + video.id}>
-                        <VideoCard video={video} />
-                    </Link>
-                ))}
-            </div>
+        <div className="flex flex-wrap justify-center">
+            {videos.map((video, index) => (
+                <Link key={video.id + index} to={"/watch/" + video.id}>
+                    <VideoCard video={video} />
+                </Link>
+            ))}
             {loading && <Shimmer />}
         </div>
     );
